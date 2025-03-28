@@ -97,6 +97,7 @@ img {
 
 .card__image img{
     border-radius: .75rem;
+    height: 115%;
 }
 
 .card__heading {
