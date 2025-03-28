@@ -1,0 +1,106 @@
+/*  FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/*  VARIABLES CSS  */
+:root{
+    /*  Device Width  */
+    --mobile-device: 375px;
+    --desktop-device: 1440px;
+
+    /*  Colors  */
+    --white-color: hsl(0, 0%, 100%);
+    --slate-light: hsl(212, 45%, 89%);
+    --slate-regular: hsl(216, 15%, 48%);
+    --slate-dark: hsl(218, 44%, 22%);
+    --text-color: hsl(0, 0%, 20%);
+    --lighter-text: hsl(0, 0%, 40%);
+
+    /*  Font and Typography  */
+    --body-font: "Outfit", sans-serif;
+    --body-copy: 15px;
+    
+    /*  Font weight  */
+    --light-weight: 400;
+    --heavy-weight: 700;
+}
+
+
+/*  BASE  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--body-copy);
+    background-color: var(--slate-light);
+    color: var(text-color);
+    font-weight: var(--light-weight);
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: var(heavy-weight);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*  Reusable Components  */
+.container {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 265px;
+    margin: auto;
+    width: fit-content;
+    grid-template-rows: fit-content;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+}
+
+
+/*  Card Section  */
+.card {
+    margin-block: 7rem;
+    text-align: center;
+}
+
+.card__image {
+    padding-bottom: 1.25rem;
+}
+
+.card__image img{
+    border-radius: .75rem;
+}
+
+.card__heading {
+    font-weight: var(--heavy-weight);
+    color: var(--text-color);
+    padding-bottom: .75rem;
+}
+
+.card__description {
+    color: var(--lighter-text);
+    font-weight: var(--light-weight);
+}
