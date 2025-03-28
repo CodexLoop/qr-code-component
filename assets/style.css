@@ -81,8 +81,13 @@ img {
 
 
 /*  Card Section  */
+.body__container{
+    height: 100dvh;
+    display: grid;
+    justify-items: center;
+}
+
 .card {
-    margin-block: 7rem;
     text-align: center;
 }
 
